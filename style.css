@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "crete-round";
+    src: url('CreteRound-Regular.ttf');
+}
+
+*{
+    margin:0;padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.responsive{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: Crete-Round;
+    font-size: 45px;
+    color: #444;
+}
+h2{
+    font-size: 55px;
+    color: #444;
+}
+.btn-orange{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(255, 152, 0);
+    color: white;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.btn-orange:hover{
+    color: rgb(255, 152, 0);
+    background-color: white;
+}
+
+.orange{
+    color:rgb(255, 171, 16);
+}
+
+
+/* ===================header================== */
+header{
+    height: 120px;
+    box-shadow: 1px 1px 5px grey;
+}
+header h1{
+    float: left;
+    margin-top: 20px;
+}
+header nav{
+    float:right;
+    margin-top: 3rem;
+}
+li{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: #444;
+    padding: 1em;
+    font-weight: bold;
+    background: rgb(248, 249, 250);
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+nav ul li a:hover{
+    background: #444;
+    color: rgb(248, 249, 250);
+}
+
+
+/* =================== Section baniere ============================ */
+#baniere{
+    height: 100vh;
+    background: url(img/main.jpg) no-repeat;
+}
+#baniere h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+}
+#baniere .btn-orange{
+    /* display: inline-block; */
+    position: relative;
+    left: 45%;
+    border-radius: 30px;
+    margin:0 auto;
+}
+/* ================================================= */
+
+/* =============Multiple============================ */
+#multiple{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#multiple h2{
+    text-align:center;
+    margin: 1rem auto 4rem auto;
+}
+#multiple ul{
+    display: flex;
+    justify-content: space-around;
+}
+#multiple ul li{
+    text-align: center;
+    margin: 0 2%;
+    color: #444;
+}
+#multiple ul li img{
+    margin-bottom: 2rem;
+}
+#multiple ul li h3{
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+/* ============================================= */
+
+/* =============Travel========================== */
+#travel{
+    background-color: rgb(219, 219, 219);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#travel .responsive{
+    display: flex;
+    justify-content: center;
+}
+#travel section{
+    display: inline-block;
+    margin: 0 1.4rem;
+    border-radius: 15px;
+    height: 300px;
+    width: 40%;
+    /* border:solid; */
+}
+#travel section:first-child{
+    background: url(img/article-image-1.jpg) no-repeat;
+    background-size: cover;
+}
+#travel section:last-child{
+    background: url(img/article-image-2.jpg) no-repeat;
+    background-size: cover;
+}
+#travel section h2{
+    font-size: x-large;
+    padding: 1.5rem 0 1rem 1rem;
+}
+#travel .overlay{
+    background-color: rgba(240, 248, 255, 0.726);
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+#travel .overlay:hover{
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+#travel section hr {
+    margin: 1rem;
+    border-color: rgb(255, 152, 0);
+}
+#travel section p{
+    text-align: center;
+    font-size: large;
+}
+#travel section .btn-orange{
+    margin-top: 1rem;
+    font-size: large;
+    padding: 5px;
+}
+
+/* ======================================== */
+
+/* =================from=================== */
+#contact{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+#contact h2{
+    margin-bottom: 1.5rem;
+}
+#contact hr{
+    border-color: rgb(255, 152, 0);
+    width: 50%;
+    margin: auto;
+}
+#contact p{
+    margin: 1.5rem 0 1.5rem 0;
+}
+#contact form{
+    display: flex;
+    justify-content:center
+}
+.form-control{
+    margin:10px;
+}
+.form-control label{
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    font-size: large;
+}
+input:focus{
+    border-color: rgb(255, 152, 0);
+    outline-color: rgb(255, 152, 0);
+}
+input{
+    height: 30px;
+    padding: 2px 5px;
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}
+input[type="submit"]{
+    bottom: -13px;
+    position: relative;
+    padding: 1px 5px;
+    transition-duration: 0.3s;
+}
+input[type="submit"]:hover{
+    padding: 0 20px;
+}
+/* ===================================== */
+/* ===============Footer================ */
+footer{
+    background-color: #444;
+    text-align: center;
+    padding: 5rem 6rem;
+}
+footer h1{
+    color: white;
+    transition-duration: 0.3s;
+}
+footer h1:hover{
+    color: rgb(255, 152, 0);
+}
+footer p{
+    color: rgb(212, 209, 209);
+    margin: 1rem 0 0 0;
+}
