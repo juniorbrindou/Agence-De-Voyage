@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <style>
+        img{width: 70Vw; height: 70Vh;}
+        .slider{width: 70Vw;overflow: hidden;margin: auto;}
+        .slides{display: flex;}
+        .slides div{animation: slide 10s infinite;}
+        @keyframes slide {
+            0%{
+                transform: translateX(0Vw);
+            }
+            20%{
+                transform: translateX(0Vw);
+            }
+            30%{
+                transform: translateX(-70Vw);
+            }
+            60%{
+                transform: translateX(-70Vw);
+            }
+            70%{
+                transform: translateX(-140Vw);
+            }
+            90%{
+                transform: translateX(-140Vw);
+            }
+            100%{
+                transform: translateX(0Vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="img/article-image-1.jpg" alt="bof"></div>
+            <div class="slide"><img src="img/main.jpg" alt=""></div>
+            <div class="slide"><img src="img/article-image-2.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
